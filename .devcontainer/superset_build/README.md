@@ -3,7 +3,7 @@
 docker build -t superset-build .
 
 # Secret key should be changed and kept secret, not published to GitHub :)
-docker run -d -v ${PWD}:/data:rw -p 8080:8088 -e "SUPERSET_SECRET_KEY=your_new_secret_key" --name superset superset-build
+docker run -d -v ${PWD}:/data:rw -p 8080:8088 -e "SUPERSET_SECRET_KEY=ywyfhaugerhargn" --name superset superset-build
 
 # Explanation for the -v ${PWD}:/data:rw flag:
 # This flag mounts the current working directory (${PWD}) on the host machine to the /data directory inside the container.
