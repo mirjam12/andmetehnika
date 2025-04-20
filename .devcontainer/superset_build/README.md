@@ -17,3 +17,11 @@ docker run -d -v ${PWD}:/data:rw -p 8080:8088 -e "SUPERSET_SECRET_KEY=ywyfhauger
 docker exec -it superset superset fab create-admin --username admin --firstname Admin --lastname Superset --email admin@example.com --password admin
 docker exec -it superset superset db upgrade
 docker exec -it superset superset init
+
+ywyfhaugerhargn
+docker run -d \
+  -v "/path/to/your/code":/data \
+  -p 8080:8088 \
+  -e "SUPERSET_SECRET_KEY=ywyfhaugerhargn" \
+  --name superset \
+  superset-build
